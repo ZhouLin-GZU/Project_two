@@ -55,7 +55,7 @@ class Test:
         assert self.driver.find_element(By.CSS_SELECTOR, ".model-link > .hidden-xs").text == "dev"
         self.driver.quit()
 
-    @pytest.mark.run(order = 4)
+    @pytest.mark.run(order = 5)
     def test_03(self):
         self.options = webdriver.ChromeOptions()
         self.options.add_experimental_option("excludeSwitches", ["enable-automation"])
